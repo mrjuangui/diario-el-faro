@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>El Faro - Periódico Digital</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="/css/estilos.css">
+</head>
+<body>
+
+    
+  <!-- Aviso superior con ticker -->
+  <div class="top-bar bg-danger text-white py-1">
+    <div class="container-fluid">
+      <div id="newsTicker" class="d-flex overflow-hidden">
+        <div class="ticker d-flex">
+          <span class="me-5">Última hora: El Faro celebra 10 años de periodismo independiente.</span>
+          <span class="me-5"> | </span>
+          <span class="me-5">Internacional: Se firma acuerdo histórico en la ONU.</span>
+          <span class="me-5"> | </span>
+          <span class="me-5">Economía: El dólar cae frente al peso colombiano.</span>
+          <span class="me-5"> | </span>
+          <span class="me-5">Deportes: La selección gana su tercer partido consecutivo.</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="/index.html#inicio">
+        <img src="/img/faro-blanco.png" alt="El Faro" height="45px" width="45px" class="me-2 rounded"> Diario El Faro
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="/index.html#inicio">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="/index.html#deporte">Deporte</a></li>
+          <li class="nav-item"><a class="nav-link" href="/index.html#negocios">Negocios</a></li>
+          <li class="nav-item"><a class="nav-link" href="/index.html#contacto">Contacto</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+  <!-- Contenido de la noticia -->
+  <section class="container my-5">
+    <h1 class="mb-3">Título de "Nueva Maravilla del Mundo" de Machu Picchu en riesgo: Podría perderlo si no soluciona varios problemas</h1>
+    <p class="text-muted">Publicado el 18 de septiembre de 2025 | Categoría: Otros</p>
+    <img src="/img/otros-3.jpg" class="img-fluid rounded mb-4" alt="Otros 3" style="display: block; margin: 0 auto;">
+    <p>
+      La ciudadela inca de Machu Picchu, en el sur de Perú, puede perder su título de "Nueva Maravilla del Mundo" si se mantienen problemas como la alta presión del turismo sin gestión sostenible, el incremento de precios, el riesgo de afectación al patrimonio histórico y prácticas irregulares vinculadas a la venta de entradas, advirtió la organización New 7 Wonders.
+    </p>
+    <p>
+      La entidad señaló, en un comunicado difundido este lunes por medios locales de Perú, que "los principales responsables de la toma de decisiones" a nivel del Gobierno nacional, local y del Congreso peruano "han recibido desde hace tiempo" sus propuestas para "implementar un plan estratégico de transformación de Machu Picchu".
+    </p>
+    <p>
+      "La permanencia, justificable y creíble, de Machu Picchu como una de las Nuevas Siete Maravillas del Mundo bajo nuestra jurisdicción depende de ello, lo cual sigue siendo nuestro objetivo primordial", remarcó el comunicado, que fue suscrito el sábado pasado en Zurich por el director de la organización, Jean-Paul de la Fuente.
+    </p>
+
+
+  </section>
+
+
+  <!-- Footer ampliado -->
+  <footer class="bg-dark text-light pt-5 pb-3 mt-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <h5>El Faro</h5>
+          <p>Periódico digital al servicio de la comunidad.</p>
+        </div>
+        <div class="col-md-4">
+          <h5>Enlaces</h5>
+          <ul class="list-unstyled">
+            <li><a href="/index.html#inicio" class="text-light text-decoration-none">Inicio</a></li>
+            <li><a href="/index.html#deporte" class="text-light text-decoration-none">Deportes</a></li>
+            <li><a href="/index.html#negocios" class="text-light text-decoration-none">Negocios</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4" id="contacto">
+          <h5>Contacto</h5>
+          <p>Email: contacto@elfaro.com</p>
+          <p>Tel: +56 123 456 789</p>
+          <div>
+            <a href="#" class="text-light me-2">Facebook</a>
+            <a href="#" class="text-light me-2">Twitter</a>
+            <a href="#" class="text-light">Instagram</a>
+          </div>
+        </div>
+      </div>
+      <div class="text-center mt-3">
+        <small>&copy; <span id="year"></span> El Faro - Todos los derechos reservados.</small>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Script personalizado -->
+  <script src="/js/scripts.js"></script>
+
+  <!-- Script para actualizar el año en el footer -->
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+
+</body>
+</html>

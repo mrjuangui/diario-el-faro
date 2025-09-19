@@ -1,0 +1,256 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>El Faro - Periódico Digital</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="/css/estilos.css">
+</head>
+<body>
+
+    
+  <!-- Aviso superior con ticker -->
+  <div class="top-bar bg-danger text-white py-1">
+    <div class="container-fluid">
+      <div id="newsTicker" class="d-flex overflow-hidden">
+        <div class="ticker d-flex">
+          <span class="me-5">Última hora: El Faro celebra 10 años de periodismo independiente.</span>
+          <span class="me-5"> | </span>
+          <span class="me-5">Internacional: Se firma acuerdo histórico en la ONU.</span>
+          <span class="me-5"> | </span>
+          <span class="me-5">Economía: El dólar cae frente al peso colombiano.</span>
+          <span class="me-5"> | </span>
+          <span class="me-5">Deportes: La selección gana su tercer partido consecutivo.</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="#inicio">
+        <img src="/img/faro-blanco.png" alt="El Faro" height="45px" width="45px" class="me-2 rounded"> Diario El Faro
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#inicio">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="#deporte">Deporte</a></li>
+          <li class="nav-item"><a class="nav-link" href="#negocios">Negocios</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+  <!-- Carrusel de artículos destacados -->
+  <section id="inicio" class="container my-4">
+    <div id="carouselNoticias" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="/img/negocios-3.jpg" class="d-block w-100" alt="Noticia 1">
+          <div class="carousel-caption d-none d-md-block bg-black bg-opacity-75 rounded">
+            <h5 class="bg-light rounded bg-opacity-75">Gigante china busca tomar el control de Transelec, la mayor empresa de transmisión eléctrica de Chile</h5>
+            <p>El acuerdo se ha estado negociando durante aproximadamente dos años.</p>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <img src="/img/otros-1.jpg" class="d-block w-100" alt="Noticia 2">
+          <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-75 rounded">
+            <h5 class="bg-light rounded bg-opacity-75">Mon Laferte recibe dos nominaciones a los Grammy Latinos 2025: Bad Bunny lidera candidaturas con 12</h5>
+            <p>La chilena competirá en las categorías de Canción del Año, por "Otra noche de llorar", y Mejor video musical versión larga, por "Te Amo".</p>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <img src="/img/deportes-1.jpg" class="d-block w-100" alt="Noticia 3">
+          <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-75 rounded">
+            <h5 class="bg-light rounded bg-opacity-75">El nuevo rol de Alexis Sánchez en el Sevilla y cuándo regresa a La Liga</h5>
+            <p">El tocopillano es destacado como un líder.</p>
+          </div>
+        </div>
+      </div>
+
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselNoticias" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Anterior</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselNoticias" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Siguiente</span>
+      </button>
+    </div>
+  </section>
+
+
+  <!-- Sección deportes -->
+  <section id="deporte" class="container my-5">
+    <h2 class="mb-3">Deportes</h2>
+    <div class="row g-3" style="text-align: center;">
+      <div class="col-md-4">
+        <div class="card h-100">
+          <div class="card-body">
+            <h5 class="card-title">El nuevo rol de Alexis Sánchez en el Sevilla y cuándo regresa a La Liga</h5>
+            <img src="/img/deportes-1.jpg" alt="Deportes 1" style="width:100%; text-align: center;">
+            <p class="card-text" style="margin-top: 5px;">El tocopillano es destacado como un líder.</p>
+            <a href="/templates/deportes-1.html" class="stretched-link"></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card h-100">
+          <div class="card-body">
+            <h5 class="card-title">España es el nuevo número uno del ranking FIFA y Chile sigue 57°</h5>
+            <img src="/img/deportes-2.jpg" alt="Deportes 2" style="width:100%; text-align: center;">
+            <p class="card-text" style="margin-top: 5px;">Argentina estaba desde 2023 en la cima de la clasificación.</p>
+            <a href="/templates/deportes-2.html" class="stretched-link"></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card h-100">
+          <div class="card-body">
+            <h5 class="card-title">Oficial: José Mourinho es el nuevo entrenador del Benfica</h5>
+            <img src="/img/deportes-3.jpg" alt="Deportes 3" style="width:100%; text-align: center;">
+            <p class="card-text" style="margin-top: 5px;">"The Special One" viene de dirigir al Fenerbahce.</p>
+            <a href="/templates/deportes-3.html" class="stretched-link"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Sección negocios -->
+  <section id="negocios" class="container my-5">
+    <h2 class="mb-3">Negocios</h2>
+    <div class="row g-3" style="text-align: center;">
+      <div class="col-md-4">
+        <div class="card h-100">
+          <div class="card-body">
+            <h5 class="card-title">Alertan por déficit presupuestario que "pone en riesgo el corazón del plan de emergencia habitacional"</h5>
+            <img src="/img/negocios-1.jpg" alt="Negocios 1" style="width:100%; text-align: center;">
+            <p class="card-text" style="margin-top: 5px;">La ADVS señaló un déficit del 32,3%.</p>
+            <a href="/templates/negocios-1.html" class="stretched-link"></a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card h-100">
+          <div class="card-body">
+            <h5 class="card-title">Fed cumple con las expectativas y aplica el primer recorte de tasas en EE.UU. desde que Trump asumió</h5>
+            <img src="/img/negocios-2.jpg" alt="Negocios 2" style="width:100%; text-align: center;">
+            <p class="card-text" style="margin-top: 5px;">El banco central estadounidense redujo los tipos de interés en 25 puntos base.</p>
+            <a href="/templates/negocios-2.html" class="stretched-link"></a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card h-100">
+          <div class="card-body">
+            <h5 class="card-title">Gigante china busca tomar el control de Transelec, la mayor empresa de transmisión eléctrica de Chile</h5>
+            <img src="/img/negocios-3.jpg" alt="Negocios 3" style="width:100%; text-align: center;">
+            <p class="card-text" style="margin-top: 5px;">El acuerdo se ha estado negociando durante aproximadamente dos años.</p>
+            <a href="/templates/negocios-3.html" class="stretched-link"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Sección de artículos pequeños -->
+  <section class="container my-4">
+    <h2 class="mb-3">Otros artículos</h2>
+    <div class="row g-3" style="text-align: center;">
+
+      <div class="col-md-4">
+        <div class="card h-100">
+          <div class="card-body">
+            <h5 class="card-title">Mon Laferte recibe dos nominaciones a los Grammy Latinos 2025: Bad Bunny lidera candidaturas con 12</h5>
+            <p class="card-text">La chilena competirá en las categorías de Canción del Año, por "Otra noche de llorar", y Mejor video musical versión larga, por "Te Amo".</p>
+            <a href="/templates/otros-1.html" class="stretched-link"></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card h-100">
+          <div class="card-body">
+            <h5 class="card-title">Las momias más antiguas del mundo no serían chilenas: Científicos creen haberlas encontrado en Asia</h5>
+            <p class="card-text">Investigadores hallaron en Asia esqueletos que habrían sido sometidos a un proceso de momificación mediante secado al humo y que datan de hace más de 10 mil años.</p>
+            <a href="/templates/otros-2.html" class="stretched-link"></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card h-100">
+          <div class="card-body">
+            <h5 class="card-title">Título de "Nueva Maravilla del Mundo" de Machu Picchu en riesgo: Podría perderlo si no soluciona varios problemas</h5>
+            <p class="card-text">La ciudadela inca fue elegida por votación popular en internet en 2007.</p>
+            <a href="/templates/otros-3.html" class="stretched-link"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Footer ampliado -->
+  <footer class="bg-dark text-light pt-5 pb-3 mt-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <h5>El Faro</h5>
+          <p>Periódico digital al servicio de la comunidad.</p>
+        </div>
+        <div class="col-md-4">
+          <h5>Enlaces</h5>
+          <ul class="list-unstyled">
+            <li><a href="#inicio" class="text-light text-decoration-none">Inicio</a></li>
+            <li><a href="#deporte" class="text-light text-decoration-none">Deportes</a></li>
+            <li><a href="#negocios" class="text-light text-decoration-none">Negocios</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4" id="contacto">
+          <h5>Contacto</h5>
+          <p>Email: contacto@elfaro.com</p>
+          <p>Tel: +56 123 456 789</p>
+          <div>
+            <a href="#" class="text-light me-2">Facebook</a>
+            <a href="#" class="text-light me-2">Twitter</a>
+            <a href="#" class="text-light">Instagram</a>
+          </div>
+        </div>
+      </div>
+      <div class="text-center mt-3">
+        <small>&copy; <span id="year"></span> El Faro - Todos los derechos reservados.</small>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Script personalizado -->
+  <script src="/js/scripts.js"></script>
+
+  <!-- Script para actualizar el año en el footer -->
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+
+</body>
+</html>

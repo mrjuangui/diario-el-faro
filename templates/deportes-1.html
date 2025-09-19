@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>El Faro - Periódico Digital</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="/css/estilos.css">
+</head>
+<body>
+
+    
+  <!-- Aviso superior con ticker -->
+  <div class="top-bar bg-danger text-white py-1">
+    <div class="container-fluid">
+      <div id="newsTicker" class="d-flex overflow-hidden">
+        <div class="ticker d-flex">
+          <span class="me-5">Última hora: El Faro celebra 10 años de periodismo independiente.</span>
+          <span class="me-5"> | </span>
+          <span class="me-5">Internacional: Se firma acuerdo histórico en la ONU.</span>
+          <span class="me-5"> | </span>
+          <span class="me-5">Economía: El dólar cae frente al peso colombiano.</span>
+          <span class="me-5"> | </span>
+          <span class="me-5">Deportes: La selección gana su tercer partido consecutivo.</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="/index.html#inicio">
+        <img src="/img/faro-blanco.png" alt="El Faro" height="45px" width="45px" class="me-2 rounded"> Diario El Faro
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="/index.html#inicio">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="/index.html#deporte">Deporte</a></li>
+          <li class="nav-item"><a class="nav-link" href="/index.html#negocios">Negocios</a></li>
+          <li class="nav-item"><a class="nav-link" href="/index.html#contacto">Contacto</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+  <!-- Contenido de la noticia -->
+  <section class="container my-5">
+    <h1 class="mb-3">El nuevo rol que cumple Alexis Sánchez en el Sevilla y cuándo vuelve a jugar por la Liga española</h1>
+    <p class="text-muted">Publicado el 18 de septiembre de 2025 | Categoría: Deportes</p>
+    <img src="/img/deportes-1.jpg" class="img-fluid rounded mb-4" alt="Noticia 1" style="display: block; margin: 0 auto;">
+    <p>
+      Alexis Sánchez fue apagando las duras críticas que generó su sorpresiva llegada a Sevilla, luego de una temporada para el olvido en Udinese, en la cual apenas jugó en 14 partidos.
+    </p>
+    <p>
+      En su debut, el tocopillano se lució con una asistencia para el gol del empate ante Elche, actuación que le valió un mar de elogios de parte de la prensa hispana.
+    </p>
+    <p>
+      Sevilla volverá a jugar el sábado ante Deportivo Alavés, desde las 13:30 horas de Chile, por la Liga española.
+    </p>
+
+    <center><iframe width="560" height="315" src="https://www.youtube.com/embed/v2akak98fmY?si=NAE3QUz1-0KGwJde" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></center>
+
+  </section>
+
+
+  <!-- Footer ampliado -->
+  <footer class="bg-dark text-light pt-5 pb-3 mt-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <h5>El Faro</h5>
+          <p>Periódico digital al servicio de la comunidad.</p>
+        </div>
+        <div class="col-md-4">
+          <h5>Enlaces</h5>
+          <ul class="list-unstyled">
+            <li><a href="/index.html#inicio" class="text-light text-decoration-none">Inicio</a></li>
+            <li><a href="/index.html#deporte" class="text-light text-decoration-none">Deportes</a></li>
+            <li><a href="/index.html#negocios" class="text-light text-decoration-none">Negocios</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4" id="contacto">
+          <h5>Contacto</h5>
+          <p>Email: contacto@elfaro.com</p>
+          <p>Tel: +56 123 456 789</p>
+          <div>
+            <a href="#" class="text-light me-2">Facebook</a>
+            <a href="#" class="text-light me-2">Twitter</a>
+            <a href="#" class="text-light">Instagram</a>
+          </div>
+        </div>
+      </div>
+      <div class="text-center mt-3">
+        <small>&copy; <span id="year"></span> El Faro - Todos los derechos reservados.</small>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Script personalizado -->
+  <script src="/js/scripts.js"></script>
+
+  <!-- Script para actualizar el año en el footer -->
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+
+</body>
+</html>
